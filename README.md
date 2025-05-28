@@ -1,12 +1,5 @@
 # Dental-Mellow-Monsters
 This AR project transforms children’s dental anxiety by converting clinical sounds into friendly visuals. Mechanical, pneumatic, and electromagnetic noises are classified and matched with cute 3D monsters—square, round, or triangular. When sounds are detected, the corresponding monster appears in AR, replacing fear with playful interaction and turning stressful dental visits into engaging, comforting experiences.
-# Speech Command Recognition with TensorFlow.js
-
-**Real-time browser-based voice command recognition and confidence display using TensorFlow.js**
-
-
-
-## Project Introduction
 
 This project leverages TensorFlow.js’s Speech-Commands API to load a Teachable Machine–exported audio model directly in the browser. It captures live microphone input, performs FFT feature extraction, and classifies spoken commands (for example: “yes”, “no”, “up”, “down”). The page dynamically builds a list of labels and continuously updates each class’s prediction probability, enabling voice-driven interactions, animations, or control flows without any server-side component.
 
