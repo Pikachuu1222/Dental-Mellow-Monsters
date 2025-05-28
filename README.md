@@ -36,15 +36,6 @@ The `speech_recognizer.js` script carries out the following steps:
 
 
 
-## File Structure
-project-root/
-├── index.html
-├── speech_recognizer.js
-└── my_model/
-├── model.json
-├── metadata.json
-└── group1-shard1of1.bin
-
 ## Getting Started
 
 1. **Prepare your model**  
@@ -62,14 +53,13 @@ project-root/
    - Speak one of your trained commands.  
    - Observe live confidence percentages next to each label.
 
----
+
 
 ## Customization
 
 - **Thresholds**: Change `probabilityThreshold` and `overlapFactor` in `speech_recognizer.js`.  
 - **UI Hooks**: In the `recognizer.listen()` callback, trigger animations, sounds, or DOM updates based on detected commands.  
 
----
 
 ## License
 
