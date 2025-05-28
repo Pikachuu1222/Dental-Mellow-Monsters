@@ -37,5 +37,42 @@ The `speech_recognizer.js` script carries out the following steps:
 
 
 ## File Structure
+project-root/
+├── index.html
+├── speech_recognizer.js
+└── my_model/
+├── model.json
+├── metadata.json
+└── group1-shard1of1.bin
+
+## Getting Started
+
+1. **Prepare your model**  
+   - Export an audio model from Teachable Machine into a folder named `my_model/`.  
+
+2. **Set up your HTML**  
+   - Include a container element with `id="label-container"`.  
+   - Load TensorFlow.js and `speech_recognizer.js` in your page.  
+
+3. **Serve via HTTP**  
+   - Use a local server (e.g. `python -m http.server` or `npx serve`) to avoid CORS issues.  
+
+4. **Open in Browser**  
+   - Grant microphone permission.  
+   - Speak one of your trained commands.  
+   - Observe live confidence percentages next to each label.
+
+---
+
+## Customization
+
+- **Thresholds**: Change `probabilityThreshold` and `overlapFactor` in `speech_recognizer.js`.  
+- **UI Hooks**: In the `recognizer.listen()` callback, trigger animations, sounds, or DOM updates based on detected commands.  
+
+---
+
+## License
+
+This project is released under the **MIT License**.  
 
 
