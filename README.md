@@ -1,9 +1,6 @@
 # Dental-Mellow-Monsters
-This AR project transforms children’s dental anxiety by converting clinical sounds into friendly visuals. Mechanical, pneumatic, and electromagnetic noises are classified and matched with cute 3D monsters—square, round, or triangular. When sounds are detected, the corresponding monster appears in AR, replacing fear with playful interaction and turning stressful dental visits into engaging, comforting experiences.
 
-This project leverages TensorFlow.js’s Speech-Commands API to load a Teachable Machine–exported audio model directly in the browser. It captures live microphone input, performs FFT feature extraction, and classifies spoken commands (for example: “yes”, “no”, “up”, “down”). The page dynamically builds a list of labels and continuously updates each class’s prediction probability, enabling voice-driven interactions, animations, or control flows without any server-side component.
-
-
+This AR project reduces children’s dental anxiety by transforming clinic sounds into engaging visuals. A real-time audio pipeline captures microphone input, performs FFT feature extraction, and classifies noises into mechanical, pneumatic, or electromagnetic categories. Each category triggers a uniquely shaped 3D “sound monster” from a custom LoRA-based model library. Leveraging WebAR frameworks (e.g. Three.js + AR.js), the app renders the matching monster in the child’s environment with minimal latency, replacing unsettling noises with playful visual feedback.
 
 ## Description
 
